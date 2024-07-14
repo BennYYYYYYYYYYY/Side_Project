@@ -77,7 +77,7 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 def get_all_currencies_rates_str():
     """取得所有幣別目前匯率字串
     """
-    all_currencies_rates_str = ''
+    all_currencies_rates_str = ''  # 初始化一個空字串，用來存放最終的所有幣別匯率字串
     # all_currencies_rates 是一個 dict
     all_currencies_rates = twder.now_all()
 
