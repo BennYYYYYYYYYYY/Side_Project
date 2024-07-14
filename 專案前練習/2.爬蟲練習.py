@@ -43,8 +43,8 @@ element:nth-child(N)：代表在同一層元素中的第 N 個，從 1 開始起
 
 import requests
 headers = {
-    'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-    'Cookie':'IS_TOUCH_DEVICE=F; SCREEN_SIZE=WIDTH=1536&HEIGHT=864; _ga=GA1.1.857801794.1719046812; CLIENT%5FID=20240622170013128%5F116%2E241%2E197%2E191; TW_STOCK_BROWSE_LIST=2330%7C2412; __gads=ID=2adea7b463a82bb7:T=1719046813:RT=1719078681:S=ALNI_MZxvO1AoJGo0GDnj2q3ceUTKkLb0g; __gpi=UID=00000e5b66e0a172:T=1719046813:RT=1719078681:S=ALNI_MYf4kBtrvDZ-vnFZp-RdINwa8zVUQ; __eoi=ID=da9f277121250aa4:T=1719046813:RT=1719078681:S=AA-AfjY-UPruuxD-fOlGNkeS3Hp_; _ga_0LP5MLQS7E=GS1.1.1719078681.2.1.1719078713.28.0.0; FCNEC=%5B%5B%22AKsRol-IgNJw43dsXFUf1vxZrCCA0YsRbsV5gv9mh4KpEh4WCgKrZAqtH81scblfO79294zQTBtgiu8mcKHOKV8RaB2k-c1GYQZWZIvoGWLhV-0SII72i7EhhSblza1FRRe-mb-sYyRadWiRJXq87G38jMSkRWAwsQ%3D%3D%22%5D%5D'
+    'User-Agent':'',
+    'Cookie':''
 }
 
 # 使用 network 中的 request URL
@@ -140,7 +140,7 @@ from bs4 import BeautifulSoup
 
 url = 'https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2330'
 
-headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36'}
+headers = {'user-agent': ''}
 resp = requests.get(url, headers=headers)
 
 # 設定編碼為 utf-8 避免中文亂碼問題
