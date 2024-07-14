@@ -40,9 +40,9 @@ from bs4 import BeautifulSoup
 url = 'https://goodinfo.tw/tw/ShowK_Chart.asp?STOCK_ID=2330&CHT_CAT=YEAR&PRICE_ADJ=F&SCROLL2Y=600'
 
 headers = {
-    'user-agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
-    'referer':'https://goodinfo.tw/tw/StockDetail.asp?STOCK_ID=2330',
-    'cookie':'IS_TOUCH_DEVICE=F; SCREEN_SIZE=WIDTH=1536&HEIGHT=864; _ga=GA1.1.857801794.1719046812; CLIENT%5FID=20240622170013128%5F116%2E241%2E197%2E191; TW_STOCK_BROWSE_LIST=2330%7C2412; __gads=ID=2adea7b463a82bb7:T=1719046813:RT=1719238403:S=ALNI_MZxvO1AoJGo0GDnj2q3ceUTKkLb0g; __gpi=UID=00000e5b66e0a172:T=1719046813:RT=1719238403:S=ALNI_MYf4kBtrvDZ-vnFZp-RdINwa8zVUQ; __eoi=ID=da9f277121250aa4:T=1719046813:RT=1719238403:S=AA-AfjY-UPruuxD-fOlGNkeS3Hp_; FCNEC=%5B%5B%22AKsRol8rJsaIWhrOHFh_lHLTHnRKkhR5tu0tlkxlldxGj5LlpiBPVnnSt9-7ppL3vvQpn4h7RXfUfUNBFhIA5gqgp-m6Q2yUO0f5U_uwvBrrKyz8gd2A88ufg67IWjDZNLQ098PV-UnTcde_BKVc6Z8tH1gnUJh-NQ%3D%3D%22%5D%5D; _ga_0LP5MLQS7E=GS1.1.1719235178.4.1.1719238407.45.0.0'
+    'user-agent':'',
+    'referer':'',
+    'cookie':''
 }
 
 res = requests.get(url, headers=headers)
