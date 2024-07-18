@@ -272,3 +272,16 @@ denselist = dense.tolist() # 將 numpy 的密集矩陣轉換為 Python 列表
 df2 = pd.DataFrame(denselist, columns=terms) # 轉換為 DataFrame，這樣可以方便地查看和分析每個文件的 TF-IDF 特徵
 print(df2)
 
+'''
+output_train_path = r'C:\Users\user\Desktop\Python\機器學習預測股市project\Processed_train_data.csv'
+output_test_path = r'C:\Users\user\Desktop\Python\機器學習預測股市project\Processed_test_data.csv'
+
+train_df = pd.DataFrame(final_traindata_tfidf.todense(), columns=word)
+test_df = pd.DataFrame(final_testdata_tfidf.todense(), columns=word)
+
+with open(output_train_path, 'w', encoding='utf-8', newline='') as file:
+    train_df.to_csv(file, index=False)
+
+with open(output_test_path, 'w', encoding='utf-8', newline='') as file:
+    test_df.to_csv(file, index=False)
+'''
