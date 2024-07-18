@@ -84,6 +84,19 @@ df = pd.DataFrame(final_traindata_tfidf.T.todense().transpose(), columns=word).s
 
 df.head() # 顯示 DataFrame 的前五個值，主要用於檢查計算結果。
 
+'''
+output_train_path = r'C:\Users\user\Desktop\Python\機器學習預測股市project\Processed_train_data.csv'
+output_test_path = r'C:\Users\user\Desktop\Python\機器學習預測股市project\Processed_test_data.csv'
+
+train_df = pd.DataFrame(final_traindata_tfidf.todense(), columns=word)
+test_df = pd.DataFrame(final_testdata_tfidf.todense(), columns=word)
+
+with open(output_train_path, 'w', encoding='utf-8', newline='') as file:
+    train_df.to_csv(file, index=False)
+
+with open(output_test_path, 'w', encoding='utf-8', newline='') as file:
+    test_df.to_csv(file, index=False)
+'''
 # =================================================================================================
 
 
